@@ -1,0 +1,186 @@
+/*Start of basic body styles*/
+body{
+	font-size: 16px;
+	color: #000000; /*Black colour*/
+	background-color: #FFF8DC;
+	font-family: 'Roboto', sans-serif; /*Google fonts*/
+	overflow-x: hidden; /*Hide horizontal Scrollbar */
+}
+
+#main-content{
+	margin-top: 110px;
+	margin-bottom: 10px;
+	margin-left: 250px;
+	max-width: 65%
+}
+/*End of basic body styles*/
+
+/*Start of heading styles*/
+h1{
+	text-decoration: underline;
+	font-size: 35px;
+	color: #000000; /*Black colour*/
+	text-align: center;
+}
+
+h2{
+	font-size: 30px;
+	color: #000000; /*Black colour*/
+	text-align: center;
+	line-height: 2;
+}
+
+h3{
+	font-size:25px;
+	color: #000000; /*Black colour*/
+}
+/*End of heading styles*/
+
+/*Start of Image styles*/
+#main-image{
+	max-width: 100%;
+	height: auto;
+	padding: 5px;
+	border: 2px;
+	border-style: solid;
+	border-color: #1a1aff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#logo{
+	width:160px; 
+	height:50px;
+}
+
+/*End of Image styles*/
+
+/*Start of navigation bar styling */
+.navbar{
+	border-style: solid;
+	border-color: #ffff80; /*Yellow*/
+	height: 90px;
+	background-color: #000000; /*Black colour*/
+}
+
+.nav-item{
+	font-size: 19px;
+}
+
+.nav-item .nav-link{
+	color: #ffffff;
+}
+
+.nav-item .nav-link:hover{
+	background-color: #555;
+	color: #ffff80;
+}
+
+/*End of navigation bar styling */
+
+/*Start of footer styles*/
+footer{
+	background-color: #000000; /*Black colour*/
+	color: #ffffff; /*White colour*/
+	margin-bottom: 5px;
+	max-width: 100%;
+	border-style: solid;
+	border-color: #ffff80; /*Yellow*/
+}
+/*End of footer styles*/
+
+/*Start of sidebar styling*/
+.sidebar{
+	/* The side navigation menu */
+	width: 200px;
+	height: 400px;
+	background-color: #000000; /*Black colour*/
+	overflow: auto;
+	border-style: solid;
+	border-color: #ffff80;
+}
+
+/* Sidebar Links*/
+.sidebar a{
+	display: block;
+	color: #ffffff; /*White colour*/
+	padding: 10px;
+	text-decoration:none;
+}
+
+/* Active/current link*/
+.sidebar a.active{
+	color: #ffff80; /*Yellow colour*/
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active){
+	background-color: #555;
+	color: #ffff80;
+}
+
+#left-sidebar{
+	float:left;
+	position: fixed;
+	margin-top: -20px;
+}
+
+/*End of sidebar styling*/
+
+/*Start of contents section styling */
+
+/*Contents text styling */
+
+#right-sidebar{
+	float:right;
+	position:sticky;
+	top:90px;
+	margin-top: -20px;
+}
+
+.contents a{
+	display: block;
+	color: #ffffff; /*White colour*/
+	padding: 10px;
+	text-decoration:none;
+}
+
+/*Contents section links */
+.contents{
+	width: 200px;
+	height: 400px;
+	background-color: #000000; /*Black colour*/
+	overflow: auto;
+	border-style: solid;
+	border-color: #ffff80;
+}
+
+/* Active/current link*/
+.contents a.active{
+	color: #ffff80; /*Yellow colour*/
+}
+
+/* Links on mouse-over */
+.contents a:hover:not(.active){
+	background-color: #555;
+	color: #ffff80;
+}
+
+/*End of contents section styling */
+
+/*Start of pagination styling*/
+ul.pagination li.page-item {
+	border-style: solid;
+	border-color: #1a1aff;
+	border-width: 2px;
+}
+
+ul.pagination li.page-item a.page-link:hover{
+	background-color: #8080ff;
+	color: #ffff80;
+}
+
+#pagination{
+	margin-left: 249px;
+}
+/*End of pagination styling*/
