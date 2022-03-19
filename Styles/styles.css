@@ -2,7 +2,7 @@
 body{
 	font-size: 16px;
 	color: #000000; /*Black colour*/
-	background-color: #FFF8DC;
+	background-color: ffffff; /*White*/
 	font-family: 'Roboto', sans-serif; /*Google fonts*/
 	overflow-x: hidden; /*Hide horizontal Scrollbar */
 }
@@ -36,6 +36,13 @@ h3{
 }
 /*End of heading styles*/
 
+/*Start of message styling*/
+#message{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*End of message styling*/
+
 /*Start of Image styles*/
 #main-image{
 	max-width: 100%;
@@ -43,7 +50,7 @@ h3{
 	padding: 5px;
 	border: 2px;
 	border-style: solid;
-	border-color: #1a1aff;
+	border-color: #000000; /*Black colour*/
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -54,6 +61,35 @@ h3{
 }
 
 /*End of Image styles*/
+
+/*Start of video styling*/
+#video{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+iframe{
+	height: 350px;
+	width: 550px;
+}
+
+/*End of video styling*/
+
+/*Start of Table Styles*/
+.table{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	overflow-y: auto;
+	height: auto;
+	max-width: 100%;
+	border-style: solid;
+	border-color: #000000; /*Black colour*/
+	padding: 5px;
+	display:block;
+}
+
+/*End of Table Styles*/
 
 /*Start of navigation bar styling */
 .navbar{
@@ -73,27 +109,52 @@ h3{
 
 .nav-item .nav-link:hover{
 	background-color: #555;
-	color: #ffff80;
+	color: #ffff80; /*Yellow*/
 }
 
-/*End of navigation bar styling */
-
-/*Start of footer styles*/
-footer{
-	background-color: #000000; /*Black colour*/
-	color: #ffffff; /*White colour*/
-	margin-bottom: 5px;
-	max-width: 100%;
-	border-style: solid;
+.btn {
+	background-color: #ffd11a; 
+	color: #000000; /*Black colour*/
+	font-weight: bold;
 	border-color: #ffff80; /*Yellow*/
 }
-/*End of footer styles*/
+
+.btn:hover{
+	background-color: #555;
+	color: #ffffff; /*White colour*/
+	border-color: #ffff80; /*Yellow*/
+}
+
+.form-control{
+	border-color: #ffff80; /*Yellow*/
+}
+
+.material-icons{
+	color: #ffff80; /*Yellow*/
+}
+
+a.dropdown-item{
+	background-color: #000000; /*Black colour*/
+	color: #ffff80; /*Yellow*/
+}
+
+a.dropdown-item:hover{
+	background-color: #555;
+	color: #ffffff; /*White colour*/
+}
+
+a.nav-link{
+	background-color: #000000; /*Black colour*/
+	color: #ffffff; /*White colour*/
+	text-align: center;
+}
+/*End of navigation bar styling */
 
 /*Start of sidebar styling*/
 .sidebar{
 	/* The side navigation menu */
 	width: 200px;
-	height: 400px;
+	height: 650px;
 	background-color: #000000; /*Black colour*/
 	overflow: auto;
 	border-style: solid;
@@ -125,62 +186,69 @@ footer{
 	margin-top: -20px;
 }
 
+hr.solid{
+	border-top: 3px solid #ffff80;;
+}
 /*End of sidebar styling*/
-
-/*Start of contents section styling */
-
-/*Contents text styling */
-
-#right-sidebar{
-	float:right;
-	position:sticky;
-	top:90px;
-	margin-top: -20px;
-}
-
-.contents a{
-	display: block;
-	color: #ffffff; /*White colour*/
-	padding: 10px;
-	text-decoration:none;
-}
-
-/*Contents section links */
-.contents{
-	width: 200px;
-	height: 400px;
-	background-color: #000000; /*Black colour*/
-	overflow: auto;
-	border-style: solid;
-	border-color: #ffff80;
-}
-
-/* Active/current link*/
-.contents a.active{
-	color: #ffff80; /*Yellow colour*/
-}
-
-/* Links on mouse-over */
-.contents a:hover:not(.active){
-	background-color: #555;
-	color: #ffff80;
-}
-
-/*End of contents section styling */
 
 /*Start of pagination styling*/
 ul.pagination li.page-item {
 	border-style: solid;
-	border-color: #1a1aff;
+	border-color: #ffff80; /*Yellow*/
 	border-width: 2px;
 }
 
 ul.pagination li.page-item a.page-link:hover{
-	background-color: #8080ff;
-	color: #ffff80;
+	background-color: #555;
+	color: #ffff80; /*Yellow Colour*/
 }
 
 #pagination{
 	margin-left: 249px;
 }
+
+ul.pagination li.page-item a.page-link{
+	background-color: #000000; /*Black colour*/	
+	color: #ffffff; /*White colour*/
+}
 /*End of pagination styling*/
+
+/*Start of comments section styling*/
+#comments{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: 250px;
+	max-width: 65%
+}
+
+#commentbox{
+	border-color: #000000; /*Black colour*/	
+}
+
+#comment-btn{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#toggle-comments-btn{
+	margin-bottom: 10px;
+}
+
+#comments-lable{
+	margin-bottom: 10px;
+}
+/*End of comments section styling*/
+
+/*Start of footer styles*/
+footer{
+	background-color: #000000; /*Black colour*/
+	color: #ffffff; /*White colour*/
+	margin-bottom: 5px;
+	max-width: 87%;
+	border-style: solid;
+	border-color: #ffff80; /*Yellow*/
+	height:75px;
+	float: right;
+}
+
+/*End of footer styles*/
