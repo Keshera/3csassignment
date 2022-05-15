@@ -1,302 +1,224 @@
 <!DOCTYPE html>
-<html lang="en"> <!--The HTML lang attribute is used to identify the language of text content on the web. 
-	This information helps search engines return language specific results, and it is also used by screen readers that 
-switch language profiles to provide the correct accent and pronunciation. -->
-<head>
-	<!-- Start of metadata about the HTML document. Metadata is data (information) about data -->
-	<meta charset="utf-8"> <!-- telling the browser to use the utf-8 character encoding when translating machine code 
-		into human-readable text and vice versa to be displayed in the browser. The charset attribute specifies the character 
-		encoding for the HTML document. The HTML5 specification encourages web developers to use the UTF-8 character set, which covers 
-	almost all of the characters and symbols in the world -->
-	<meta name="keywords" content="my notes, video editor, OpenShot Video Editor"> <!--Meta Keywords are a specific type of meta tag 
-	that appear in the HTML code of a Web page and help tell search engines what the topic of the page is. -->
-	<meta name="description" content="Notes on various topics"> <!--The Meta name Description is an HTML element that summarizes your web page. 
-	Search engines typically show the Meta description in search results below your Title tag.  -->
-	<meta name="author" content="Keshera Wijeyesekera"> <!--Specifies the name of the author of the document-->
-	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">--> <!-- The X-UA-Compatible meta tag allows web authors to choose
-	what version of Internet Explorer the page should be rendered as.-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- The width=device-width part sets the width of the page to 
-		follow the screen-width of the device(which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level 
-	when the page is first loaded by the browser.-->
-	<!-- End of metadata -->
+<html lang="en"> <!--The HTML lang attribute is used to identify the language of text content on the web.-->
+	<head>
+		<!-- Start of metadata--> 
+		<!--about the HTML document. Metadata is data (information) about data -->
+		<meta charset="utf-8"> <!-- telling the browser to use the utf-8 character encoding-->
+		<meta name="keywords" content="my notes, video editor, OpenShot Video Editor"> <!--Meta Keywords are a specific type of meta tag 
+		that appear in the HTML code of a Web page and help tell search engines what the topic of the page is. -->
+		<meta name="description" content="Notes on various topics"> <!--The Meta name Description is an HTML element that summarizes your web page. 
+		Search engines typically show the Meta description in search results below your Title tag.  -->
+		<meta name="author" content="Keshera Wijeyesekera"> <!--Specifies the name of the author of the document-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- The width=device-width part sets the width of the page to 
+			follow the screen-width of the device(which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level 
+		when the page is first loaded by the browser.-->
+		<!-- End of metadata -->
+		
+		<title>3CS Sample Site (Assignment) Home</title>
+		
+		<link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css"> <!--Link to Bootstrap stylesheet-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"> <!--Link to Bootstrap icons-->
+		<script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script> <!--Linking Bootstrap Javascript File-->
+		
+		<link rel="stylesheet" href="Styles/styles.css"> <!-- Link to CSS stylesheet-->
+		
+		
+		<script src="Javascript/myscript.js"></script> <!-- Link to Javascript file -->
+		
+		<!--Link to Google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- informs the browser that your page intends to establish a connection to another origin-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		
+		<!--Link to Google material icons -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet">
+		
+	</head>
 	
-	<title>My Notes</title>
-	
-	<link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css"> <!--Link to bootstrap stylesheet-->
-	<script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script> <!--Linking Bootstrap Javascript File-->
-	
-	<link rel="stylesheet" href="Styles/styles.css"> <!-- Link to CSS stylesheet-->
-	
-	
-	<script src="Javascript/myscript.js"></script> <!-- Link to Javascript file -->
-	
-	<!--Link to Google fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- informs the browser that your page intends to establish a connection to another origin-->
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	
-	<!--Link to Google material icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
-	
-</head>
-
-<body onload="alertUser()"> <!-- Website under construction on page load -->
-	
-	<!--Start of horizontal fixed navigation bar at the top of the page-->
+	<!--<body onload="alertUser()"> <!-- Website under construction on page load -->
+	<body>
 	<header>
-		<nav class="navbar navbar-expand-sm fixed-top">  
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- Start of nav bar -->
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">
-					<img id="logo" src="Images/Logo/MyNotes.png" alt="MyNotes" class="rounded-pill"> <!--Website logo/name -->
+				<a class="navbar-brand" href="3CS Assignment Home.html">
+					<img src="Images/Logo/3CS Logo.png" alt="3CS Logo" id="logo"> 
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"> <!--Navigation bar collapse function -->
-					<span class="material-icons">menu</span>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="mynavbar"> 
-					<ul class="navbar-nav me-auto"> <!-- Start of navigation bar links -->
-						<li class="nav-item dropdown"> <!--Navigation bar links with dropdown -->
-							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0)">Video Editing Software</a>
-							<ul class="dropdown-menu"> <!-- Start of drop-down menu -->
-								<li><a class="dropdown-item" href="#">OpenShot Video Editor</a></li>
-								<li><a class="dropdown-item" href="#">Link</a></li>
-								<li><a class="dropdown-item" href="#">Link</a></li>
-							</ul> <!-- End of drop-down menus-->
+				<div class="collapse navbar-collapse" id="mynavbar">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">About</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="3CS Assignment About - Our Team - Our Story.html">Our Story</a></li>
+								<li><a class="dropdown-item" href="3CS Assignment About - Our Team.html">Our Team</a></li>
+							</ul>
 						</li>
-						<li class="nav-item dropdown"> <!--Navigation bar links with dropdown -->
-							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0)">Screen Recorder Software</a>
-							<ul class="dropdown-menu"> <!-- Start of drop-down menu -->
-								<li><a class="dropdown-item" href="#">Active Presenter</a></li>
-								<li><a class="dropdown-item" href="#">Link 2</a></li>
-								<li><a class="dropdown-item" href="#">Link 3</a></li>
-							</ul> <!-- End of drop-down menus-->
+						<li class="nav-item">
+							<a class="nav-link" href="3CS Assignment Clients.html">Clients</a>
 						</li>
-						<li class="nav-item dropdown"> <!--Navigation bar links with dropdown -->
-							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0)">Sound Recording Software</a>
-							<ul class="dropdown-menu"> <!-- Start of drop-down menu -->
-								<li><a class="dropdown-item" href="#">Audible</a></li>
-								<li><a class="dropdown-item" href="#">Link 2</a></li>
-								<li><a class="dropdown-item" href="#">Link 3</a></li>
-							</ul> <!-- End of drop-down menus-->
+						<li class="nav-item">
+							<a class="nav-link" href="3CS Assignment Portfolio.html">Portfolio</a>
 						</li>
-						<li class="nav-item dropdown"> <!--Navigation bar links with dropdown -->
-							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0)">Web Development</a>
-							<ul class="dropdown-menu"> <!-- Start of drop-down menu -->
-								<li><a class="dropdown-item" href="#">Web Development</a></li>
-								<li><a class="dropdown-item" href="#">HTML</a></li>
-								<li><a class="dropdown-item" href="#">CSS</a></li>
-								<li><a class="dropdown-item" href="#">Bootstrap</a></li>
-								<li><a class="dropdown-item" href="#">JavaScript</a></li>
-							</ul> <!-- End of drop-down menus-->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">Services</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="3CS Assignment About - Services.html#img-service-responsive">Responsive Website Design</a></li>
+								<li><a class="dropdown-item" href="3CS Assignment About - Services.html#img-service-marketing">Digital Marketing</a></li>
+								<li><a class="dropdown-item" href="3CS Assignment About - Services.html#img-service-ecommerce">eCommerce Solutions</a></li>
+							</ul>
 						</li>
-					</ul> <!-- End of navigation bar links -->
-					<form class="d-flex"> <!-- Start of search bar -->
+						<li class="nav-item">
+							<a class="nav-link" href="3CS Assignment Contact.html">Contact</a>
+						</li>
+					</ul>
+					<!--<form class="d-flex">
 						<input class="form-control me-2" type="text" placeholder="Search">
 						<button class="btn btn-primary" type="button">Search</button>
-					</form> <!-- End of search bar -->
+					</form>-->
 				</div>
 			</div>
-		</nav>
+		</nav> <!-- End of nav bar -->
 	</header>
-	<!--End of horizontal fixed navigation bar at the top of the page-->
 	
-	<!--Using ordered lists to display tutorial content: text and image-->
-	<!--Start of ordered list for main content -->
-	
-	<!-- Start of sidebar --> 
-	<aside id="left-sidebar"> 
-		<div class="sidebar">
-			<a href="#">OpenShot Video Editor Introduction</a>
-			<a href="#">Link</a>
-			<a href="#">Link</a>
-			<a href="#">Link</a>
-			<a href="#">Link</a>
-			<a href="#">Link</a>
-			<a href="#">Link</a>
-			<hr class="solid">
-			<a href="#0-video-tutorial">0 - Video Tutorial</a>
-			<a href="#1-main-window">1 - Main Window</a>
-			<a href="#2-built-in-tutorial">2 - Built-in Tutorial</a>
-			<a href="#3-import-files">3 - Import Files</a>
-			<a href="#4-add&arrange">4 - Add and Arrange Files on the Timeline</a>
-			<a href="#5-preview-project">5 - Preview Project</a>
-			<a href="#6-export-project">6 - Export Project</a>
+	<!-- Start of Carousel -->
+	<div id="demo" class="carousel slide" data-bs-ride="carousel">
+		
+		<!-- Indicators/dots -->
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+			<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
 		</div>
-	</aside>
-	<!-- End of sidebar -->
+		
+		<!-- The slideshow/carousel -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="Images/Banner Images/Banner Image 01.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+				<div class="carousel-caption">
+					<h1 id="main-heading">World-Class Web Design Solutions</h1>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="Images/Banner Images/Banner Image 02.jpg" alt="Chicago" class="d-block" style="width:100%">
+				<div class="carousel-caption">
+					<h1 id="main-heading">World-Class Web Design Solutions</h1>
+				</div> 
+			</div>
+			<div class="carousel-item">
+				<img src="Images/Banner Images/Banner Image 03.jpg" alt="New York" class="d-block" style="width:100%">
+				<div class="carousel-caption">
+					<h1 id="main-heading">World-Class Web Design Solutions</h1>
+				</div>  
+			</div>
+		</div>
+		
+		<!-- Left and right controls/icons -->
+		<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</button>
+	</div>
+	<!-- End of Carousel -->
 	
 	<div class="container" id="main-content">
-		<div class="row">
-			<div class="col">
+		<p class="text-center mt-3" id="main-para">
+			3CS is Sri Lanka’s premier web design and digital marketing agency. 
+			With over two decades of industry experience, multiple web design awards every year and a blue-chip clientele, 
+			we offer an unparalleled service. We offer highly personalized, bespoke solutions to an exclusive client list. 
+			Our solutions include responsive web design, digital marketing and professional photography.
+		</p>
+		<div class="text-center mb-3">
+			<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+				ENQUIRE NOW
+			</button>
+		</div>
+	</div>
+	
+	
+	<!-- The Modal -->
+	<div class="modal" id="myModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
 				
-				<!-- Start of message from author -->
-				<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#message">Toggle Section</button>
-				<div id="message" class="collapse show">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-					aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-					dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-					deserunt mollit anim id est laborum.
-					<hr>
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Enquiry</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 				</div>
-				<!-- End of message from author -->
 				
-				<h1>OpenShot Video Editor Introduction</h1>
-				
-				<h2 id="0-video-tutorial">Video Tutorial</h2>
-				<div id="video">
-					<iframe
-					src="https://www.youtube.com/embed/ewZ_YWbIWXI" title="OpenShot Video Editor Video Tutorial">
-					</iframe>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<!-- start of form -->
+					<div class="container mt-3">
+						<form action="3CS Assignment Home.html">
+						    <div class="row">
+								<div class="col">
+									<label for="fname">First Name:</label>
+									<input type="text" class="form-control" placeholder="Enter First Name" name="fname">
+								</div>
+								<div class="col">
+									<label for="lname">Last Name:</label>
+									<input type="text" class="form-control" placeholder="Enter Last Name" name="lname">
+								</div>
+							</div>
+							<div class="mb-3 mt-3">
+								<label for="email" class="form-label">Email:</label>
+								<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+							</div>
+							<div class="mb-3 mt-3">
+								<label for="number" class="number">Phone Number:</label>
+								<input type="text" class="form-control" placeholder="Enter phone number" name="number">
+							</div>
+							<div class="mb-3 mt-3">
+								<label for="comment">Comments:</label>
+								<textarea class="form-control" rows="5" id="comment" placeholder="Enter your comments here" name="comment"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+					<!-- End of form -->
 				</div>
 				
-				<h2 id="1-main-window"><b>1. </b>Main Window</h2>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/OpenShot Video Editor - Main Window.jpg" alt="OpenShot Video Editor - Main Window">
-				<!--Start of main window components table -->
-				<table class="table table-bordered table-hover table-dark">
-					<thead>
-						<tr>
-							<th>Number</th>
-							<th>Name</th>
-							<th>Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Main Toolbar</td>
-							<td>The 'main toolbar' contains buttons to open, save, and export your video project.</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Project Files</td>
-							<td>All audio, video, and image files that have been imported into your project will be shown on the 'Project Files' section.</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Preview Window</td>
-							<td>The 'preview window' is the area that the video will playback on the screen.</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Edit Toolbar</td>
-							<td>The 'edit toolbar' contains buttons used for snapping, inserting markers, and jumping between markers.</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>Zoom Slider</td>
-							<td>The 'zoom slider' will adjust the time-scale of your timeline.</td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td>Play-head / Ruler</td>
-							<td>The ruler shows the time-scale, and the red line is the play-head. 
-							The play-head represents the current playback position.</td>
-						</tr>
-						<tr>
-							<td>7</td>
-							<td>Timeline</td>
-							<td>The timeline visualizes your video project, and each clip and transition in your project.</td>
-						</tr>
-						<tr>
-							<td>8</td>
-							<td>Filter</td>
-							<td>Filter the list of items shown (project files, transitions, and effects) by using these buttons and filter textbox. 
-							Enter a few letters of what you are looking for, and the results will be shown.</td>
-						</tr>
-						<tr>
-							<td>9</td>
-							<td>Playback</td>
-							<td>Left to Right: Jump to Start, Rewind, Play/Pause, Fast Forward, and Jump to End</td>
-						</tr>
-					</tbody>
-				</table>
-				<!--End of main window components table -->
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+				</div>
 				
-				<h2 id="2-built-in-tutorial"><b>2. </b>Built-in Tutorial</h2>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Built-In Tutorial.jpg" alt="Built-In Tutorial">
-				<p><b>2.1. </b>When you first launch OpenShot, you will be presented with a built-in tutorial. It will provide a basic overview of OpenShot Video Editor.
-				Clicking <b><i>Next</i></b> will jump to the next topic. If required, You can view this tutorial again from the <b>Help→Tutorial</b> menu. </p>
-				
-				<h2 id="3-import-files"><b>3.</b> Import Files</h2>
-				<p><b>3.1. </b> Files can be dragged and dropped on to the 'Project Files' section.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Drag and Drop Files on to Project Files.jpg" alt="Drag and Drop Files on to Project Files">
-				<p><b>3.2. </b> Files can be imported by clicking on the import button on the toolbar.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Import Files from Toolbar.jpg" alt="Import Files from Toolbar">
-				<p><b>3.3. </b> Files can be imported via the menu bar: Go to File - Import Files.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Import Files from Menu Bar.jpg" alt="Import Files from Menu Bar">
-				
-				<h2 id="4-add&arrange"><b>4.</b> Add and Arrange Files on the Timeline</h2>
-				<p><b>4.1. </b> The files on 'Project Files' should be dragged onto track(s) in the timeline in order to view them. On the timeline,
-					the video or images can be arranged in whatever viewing sequence you require. A combination of files can be added on to
-					the tracks, for example: the first track can be used for images and the next track can be used to add music. 
-				The same file can be added on multiple times to the track</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Drag Images on to tracks on to the timeline tracks.jpg" alt="Drag Images on to tracks on to the timeline tracks">
-				<p><b>4.2. </b>Changing the size of the files on the tracks (by dragging the edges of the file to make it shorter or longer) 
-					will determine the duration of play. Overlapping images will create a fading tranisition effect. The blue rounded rectangles between the clips indicate
-				that a fading transition will take place.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Fading Transition.jpg" alt="Fading Transition">
-				<p>OpenShot uses tracks to layer videos and images. The top most track is the top layer (clips on this track will be visible) and the bottom track is the bottom layer.
-				OpenShot will mix each layer together. You can have an unlimited number of tracks, but typically a video project will not need more than 10 (or so) tracks.</p>
-				
-				<h2 id="5-preview-project"><b>5.</b> Preview Project</h2>
-				<p><b>5.1. </b>Click on the 'Play' button under the 'Video Preview' section to preview your project.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Video Preview.jpg" alt="Video Preview">
-				<p>In addition to playing the video, you can also pause, rewind, and fast-foward your video project (if required)
-				by clicking on the corresponding buttons.</p>
-				
-				<h2 id="6-export-project"><b>6.</b> Export Project</h2>
-				<p><b>6.1. </b> Once the project is complete, you can export the project. The converted file can be played on most media players
-				or websites. In order export the video, click on the export button on the toolbar.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Export Video Method 01.jpg" alt="Video Preview">
-				<p>When you export the video, you will have to select the preferred export options from a pop-up window.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Export Options.jpg" alt="Export Options">
-				<p><b>6.2. </b> Alternatively, you can export videos using the menu-bar. Go to File - Export Project - Export Video.</p>
-				<img id="main-image" src="Images/OpenShot Video Editor Introduction/Export Using Menu Bar.jpg" alt="Export Using Menu Bar">
 			</div>
 		</div>
 	</div>
 	
-	<!-- Start of Pagination -->
-	<div class="container-fluid" id="pagination"> 
-		<ul class="pagination">
-			<li class="page-item"><a class="page-link" href="#">Previous</a></li>
-			<li class="page-item"><a class="page-link" href="#">1</a></li>
-			<li class="page-item"><a class="page-link" href="#">2</a></li>
-			<li class="page-item"><a class="page-link" href="#">3</a></li>
-			<li class="page-item"><a class="page-link" href="#">Next</a></li>
-		</ul> 
-	</div> 
-	<!-- End of Pagination -->
-	
-	<!--End of ordered list for main content-->
-	
-	<!-- Start of comments section -->
-	<div class="container" id="comments">
-	<hr>
-		<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#toggle-comments" id="toggle-comments-btn">Toggle Comments Section</button>
-		<div id="toggle-comments" class="collapse show">
-		<form>
-		<label for="comment" id="comments-lable">Comments:</label>
-		<textarea class="form-control" rows="5" id="commentbox" name="text" placeholder="Type your comment here"></textarea>
-		<button type="submit" class="btn btn-primary" id="comment-btn">Submit</button>
-		</form>
+	<!-- Start of footer -->
+	<footer class="bg-dark text-center text-lg-start">
+		<!-- Social media icons-->
+		<div class="text-center p-3">
+			<div class= "mb-2">
+				<a href="https://www.facebook.com/3cs.web.design.srilanka/" target="_blank" class="text-decoration-none">
+					<i class="bi bi-facebook"></i>
+				</a>
+				<a href="https://www.linkedin.com/company/3cs-web-design/?originalSubdomain=lk" target="_blank" class="text-decoration-none">
+					<i class="bi bi-linkedin"></i>
+				</a>
+				<a href="https://mobile.twitter.com/3cslk" target="_blank" class="text-decoration-none">
+					<i class="bi bi-twitter"></i>
+				</a>
+				<a href="https://www.instagram.com/3cs.digital.marketing/?igshid=1ioltq7e7gtr1" target="_blank" class="text-decoration-none">
+					<i class="bi bi-instagram"></i>
+				</a>
+				<!-- Social media icons-->
+				<!-- Copyright -->
+			</div>
+			<span class="text-light">© 2022 Copyright:</span>
+			<a class="text-light" href="https://www.3cs.lk/">3CS</a>
 		</div>
-	</div>
-	<!-- End of comments section -->
-	
-	<!--Start of Footer-->
-	<footer>
-		<div class="container-fluid">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-			et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-			aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-			dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-			deserunt mollit anim id est laborum.
-		</div>
+		<!-- Copyright -->
 	</footer>
-	<!--End of footer -->
-	
+	<!-- End of footer -->
 </body>
 
 </html>
